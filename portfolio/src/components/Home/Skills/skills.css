@@ -1,0 +1,18 @@
+.skillsCont {
+    margin: 0 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skillCard {
+    width: 20%;
+    background-color: lightgray;
+    
+}
+
+.skillCard img {
+    max-width: 150px;
+    max-height: 100px;
+    margin: 0 5px;
+}

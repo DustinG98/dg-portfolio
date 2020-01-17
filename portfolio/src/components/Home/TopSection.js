@@ -8,7 +8,7 @@ const TopSection = () => {
                 <div className="topSection">
                     <div className="topSectionText">
                         <h1>
-                            Hello, I'm Dustin Graham<br/> A Front End Focused Developer
+                            Hello, I'm Dustin Graham<br/> A Full Stack Web Developer
                         </h1>
                     </div>
                 </div>

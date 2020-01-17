@@ -1,13 +1,12 @@
 import React from 'react'
 import TopSection from './TopSection'
+import MySkills from './Skills/MySkills'
 
 const Home = () => {
     return (
         <div>
             <TopSection/>
-            <div>
-                <h1>Hello</h1>
-            </div>
+            <MySkills/>
         </div>
     )
 }
