@@ -1,14 +1,14 @@
 import React from 'react'
 import './mobilemenu.css'
-
+import { NavLink } from 'react-router-dom'
 
 const MobileMenu = ({ menuClass }) => {
     return (
         <div className={`mobileMenu ${menuClass}`}>
             {/* ************Mobile Menu************* */}
-            <a href="#" className="active"> Home </a>
-            <a href="#"> Blog </a>
-            <a href="#"> Contact </a>
+            <NavLink to="/" activeClassName="active"> Home </NavLink>
+            <NavLink to="/blog" activeClassName="active"> Blog </NavLink>
+            <NavLink to="/contact" activeClassName="active"> Contact </NavLink>
         </div>
     )
 }

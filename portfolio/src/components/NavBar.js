@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './navbar.css'
 import MobileMenu from './MobileMenu/MobileMenu'
+import {NavLink} from 'react-router-dom'
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -35,9 +36,9 @@ const NavBar = () => {
                     <div className="bar3"></div>
                 </div>
                 {/* **********************TABLET & DESKTOP NAV MENU**************************** */}
-                <a href="#" className="active"> Home </a>
-                <a href="#"> Blog </a>
-                <a href="#"> Contact </a>
+                <NavLink to="/" activeClassName="active"> Home </NavLink>
+                <NavLink to="/blog" activeClassName="active"> Blog </NavLink>
+                <NavLink to="/contact" activeClassName="active"> Contact </NavLink>
             </nav>
             <MobileMenu menuClass={menuClass}/>
         </div>
