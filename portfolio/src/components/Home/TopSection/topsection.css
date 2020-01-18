@@ -6,7 +6,6 @@
     background-image: url('../../../sunset.jpeg');
     background-position: bottom;
     overflow: hidden;
-    border-radius: 10px;
     filter: grayscale(50%);
 }
 @keyframes gradient {

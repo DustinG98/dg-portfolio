@@ -13,9 +13,11 @@ nav a {
     font-weight: 900;
 }
 nav a:hover{
-    text-decoration: line-through;
+    text-decoration: none;
+    background-image: linear-gradient(transparent 7px,rgb(231, 231, 231) 7px,rgb(231, 231, 231) 10px,transparent 9px);
 }
 
 .active {
-    text-decoration: line-through;
+    text-decoration: none;
+    background-image: linear-gradient(transparent 7px,rgb(231, 231, 231) 7px,rgb(231, 231, 231) 10px,transparent 9px);
 }
