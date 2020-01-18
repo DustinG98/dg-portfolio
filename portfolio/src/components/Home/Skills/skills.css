@@ -1,13 +1,18 @@
 .skillsCont {
-    margin: 0 20%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .skillCard {
-    width: 20%;
-    background-color: lightgray;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #393939;
+    border: 2px solid #808080;
     
 }
 

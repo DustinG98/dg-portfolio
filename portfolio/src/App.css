@@ -3,7 +3,6 @@
 }
 
 .appWrapper {
-  border: 15px solid rgb(39, 39, 39);
   position: relative;
   z-index: 999;
 }
