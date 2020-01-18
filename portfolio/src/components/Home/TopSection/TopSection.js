@@ -4,6 +4,7 @@ import './topsection.css'
 const TopSection = () => {
     return (
         <div>
+            {/*  *************Top section image with splash text/button***********  */}
             <div className="topSectionImg">
                 <div className="topSection">
                     <div className="topSectionText">
