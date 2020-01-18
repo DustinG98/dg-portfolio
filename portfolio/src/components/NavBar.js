@@ -25,7 +25,6 @@ const NavBar = () => {
     return (
         <div>
             <nav>
-                {console.log(isOpen)}
                 <h2 className="logo">Dustin Graham</h2>
                 <h2 className="mobileLogo">DG</h2>
                 
@@ -36,11 +35,11 @@ const NavBar = () => {
                     <div className="bar3"></div>
                 </div>
                 {/* **********************TABLET & DESKTOP NAV MENU**************************** */}
-                <NavLink to="/" activeClassName="active"> Home </NavLink>
+                <NavLink exact to="/" activeClassName="active" > Home </NavLink>
                 <NavLink to="/blog" activeClassName="active"> Blog </NavLink>
-                <NavLink to="/contact" activeClassName="active"> Contact </NavLink>
+                <NavLink to="/contact" activeClassName="active" > Contact </NavLink>
             </nav>
-            <MobileMenu menuClass={menuClass}/>
+            <MobileMenu menuClass={menuClass} openMenu={openMenu}/>
         </div>
     )
 }

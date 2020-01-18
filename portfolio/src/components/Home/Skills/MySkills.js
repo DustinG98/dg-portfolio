@@ -3,7 +3,7 @@ import './skills.css'
 
 const MySkills = () => {
     return (
-        <div>
+        <div style={{ margin: "5% 0" }}>
             <h2>My Skills</h2>
             <div className="skillsCont">
                 <div className="skillCard">
