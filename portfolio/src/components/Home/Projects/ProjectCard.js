@@ -1,6 +1,8 @@
 import React from 'react'
 import Popup from 'reactjs-popup'
 
+import ProjectPopup from './ProjectPopup/ProjectPopup'
+
 import './projects.css'
 
 const ProjectCard = ({ project }) => {
@@ -18,9 +20,9 @@ const ProjectCard = ({ project }) => {
                     modal
                     closeOnDocumentClick
                 >
-                    {close => <div style={{width: '100%', height: '80vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    {close => <div style={{ width: '100%', height: '80vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#272727'}}>
                         <button className="close" style={{ zIndex: '999' }} onClick={close}>&times;</button>
-                        <h1 style={{color: "black"}}>Modal</h1>
+                        <ProjectPopup project={project}/>
                     </div>}
                 </Popup>
             </div>

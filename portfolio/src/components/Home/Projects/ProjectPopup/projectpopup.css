@@ -1,0 +1,22 @@
+.popup {
+    display: flex;
+    align-items: center;
+}
+
+.popupImg{
+    width: 70%;
+    height: 79vh;
+    background-image: url('./spotlight03.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.popupText {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    line-height: 1;
+    justify-self: flex-start;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
