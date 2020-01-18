@@ -9,18 +9,18 @@ nav {
     min-height: 75px;
 }
 nav a {
-    color: rgb(231, 231, 231);
+    color: rgb(206, 206, 206);
     text-decoration: none;
     font-weight: 900;
 }
 nav a:hover{
-    text-decoration: none;
-    background-image: linear-gradient(transparent 7px,rgb(231, 231, 231) 7px,rgb(231, 231, 231) 10px,transparent 9px);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
 }
 
 nav .active {
-    text-decoration: none;
-    background-image: linear-gradient(transparent 7px,rgb(231, 231, 231) 7px,rgb(231, 231, 231) 10px,transparent 9px);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
 }
 .mobileLogo {
     display: none;
