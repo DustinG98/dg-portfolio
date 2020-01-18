@@ -25,7 +25,7 @@ nav .active {
     display: none;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .mobileLogo {
         display: inline-block;
     }
@@ -34,14 +34,23 @@ nav .active {
     }
     nav {
         justify-content: space-between;
-        margin: 0 10%;
+        align-items: center;
+        padding: 0 10%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 990;
+        min-height: 75px;
     }
     nav a {
         display: none;
     }
     .container {
-        display: inline-block;
         cursor: pointer;
+        z-index: 999;
+        top: 17px;
+        position: fixed;
+        right: 10%;
       }
       
       .bar1, .bar2, .bar3 {
