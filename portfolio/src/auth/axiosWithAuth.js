@@ -4,7 +4,7 @@ export const axiosWithAuth = () => {
   const token = localStorage.getItem("auth-token");
 
   return axios.create({
-    baseURL: "",
+    baseURL: "http://localhost:5000/api/auth",
     headers: {
       "auth-token": token
     }

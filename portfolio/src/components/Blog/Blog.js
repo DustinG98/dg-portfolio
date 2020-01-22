@@ -8,7 +8,7 @@ const Blog = () => {
         <div>
             <div>
                 <h1>Welcome to my blog!</h1>
-                <Link className="admin" to="/blog/dashboard/login">Admin</Link>
+                <Link className="admin" to="/blog/dashboard">Admin</Link>
             </div>
 
 
