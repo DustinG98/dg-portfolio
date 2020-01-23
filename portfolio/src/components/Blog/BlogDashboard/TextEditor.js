@@ -19,7 +19,7 @@ import {
 import editorStyles from './editorStyles.css';
 import 'draft-js-static-toolbar-plugin/lib/plugin.css';
 
-import { convertToRaw, convertFromRaw } from 'draft-js'
+import { convertToRaw, convertFromRaw, EditorState } from 'draft-js'
 
 import { axiosWithAuth } from '../../../auth/axiosWithAuth'
 
@@ -90,19 +90,21 @@ export default class CustomToolbarEditor extends Component {
 
   sendData = () => {
     axiosWithAuth().post('/blog', {
-        title: 'test',
-        section: 'test',
-        imageSource: 'testURL',
-        content: convertToRaw(this.state.editorState._immutable.currentContent)
+        title: 'blog',
+        section: 'test123',
+        imageSource: 'testURLL',
+        content: convertToRaw(this.state.editorState._immutable.currentContent),
+        username: 'dustyboy'
     })
     .then(res => console.log(res))
     .catch(err => console.log(err))
   }
   getData = () => {
-      axiosWithAuth().get('/blog/5e287beb22d43a455847093a')
+      axiosWithAuth().get('/blog/5e2901533922e11ae848e587')
         .then(async (res) => {
-            console.log(res.data.content)
-            console.log(convertFromRaw(res.data.content))
+            console.log(res)
+            let content = convertFromRaw({...res.data.content, entityMap: {}})
+            this.setState({editorState: EditorState.createWithContent(content)})
             // this.setState({editorState: convertFromRaw(res.data.content)})
         })
         .catch(err => console.log(err))
@@ -111,6 +113,7 @@ export default class CustomToolbarEditor extends Component {
   render() {
     return (
       <div className="editCont">
+        {console.log(this.state.editorState)}
           <div className="edit-toolbar">
               <button onClick={this.sendData}>SendData</button>
               <button onClick={this.getData}>GetData</button>
