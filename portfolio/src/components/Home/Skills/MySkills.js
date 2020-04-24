@@ -15,6 +15,9 @@ const MySkills = () => {
                 <div className="skillCard">
                     <img src={require('./nodejs.png')} alt="NodeJS Logo"/>
                 </div>
+                <div className="skillCard">
+                    <img src={require('./mysql.svg')} alt="SQL"/>
+                </div>
             </div>
         </div>
     )

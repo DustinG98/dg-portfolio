@@ -36,7 +36,7 @@ const NavBar = () => {
                 </div>
                 {/* **********************TABLET & DESKTOP NAV MENU**************************** */}
                 <NavLink exact to="/" activeClassName="active" > Home </NavLink>
-                <NavLink to="/blog" activeClassName="active"> Blog </NavLink>
+                {/* <NavLink to="/blog" activeClassName="active"> Blog </NavLink> */}
                 <NavLink to="/contact" activeClassName="active" > Contact </NavLink>
             </nav>
             <MobileMenu menuClass={menuClass} openMenu={openMenu}/>

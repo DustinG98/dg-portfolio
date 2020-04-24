@@ -7,7 +7,7 @@ const MobileMenu = ({ menuClass, openMenu }) => {
         <div className={`mobileMenu ${menuClass}`}>
             {/* ************Mobile Menu************* */}
             <NavLink exact to="/" activeClassName="active" onClick={() => openMenu()}> Home </NavLink>
-            <NavLink to="/blog" activeClassName="active" onClick={() => openMenu()}> Blog </NavLink>
+            {/* <NavLink to="/blog" activeClassName="active" onClick={() => openMenu()}> Blog </NavLink> */}
             <NavLink to="/contact" activeClassName="active" onClick={() => openMenu()}> Contact </NavLink>
         </div>
     )
